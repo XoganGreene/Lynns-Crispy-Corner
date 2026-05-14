@@ -14,7 +14,7 @@ const PRODUCTS = [
     name: 'Signature Daddies',
     price: 5000,
     crispFactor: 5,
-    image: '/daddies.png',
+    image: `${import.meta.env.BASE_URL}daddies.png`,
     description: 'Bite-sized, crunchy, and slightly sweet fried dough. A Ugandan classic.',
   },
   {
@@ -60,7 +60,7 @@ const BLOG_POSTS = [
     id: 3,
     title: 'Behind the Scenes: A Custom Cake Journey',
     excerpt: 'See how we transform a simple idea into a stunning, multi-tiered edible masterpiece.',
-    image: '/behind-the-scenes.jpg',
+    image: `${import.meta.env.BASE_URL}behind-the-scenes.jpg`,
   },
 ];
 
@@ -254,7 +254,7 @@ export default function App() {
             className="w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden bg-cookie/5 relative order-2 md:order-1"
           >
             <img 
-              src="/lynn.jpeg" 
+              src={`${import.meta.env.BASE_URL}lynn.jpeg`}
               alt="Lynn" 
               className="w-full h-full object-cover"
             />
@@ -542,4 +542,3 @@ export default function App() {
     </div>
   );
 }
-
